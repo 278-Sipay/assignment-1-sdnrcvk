@@ -15,11 +15,11 @@ Week 1 - The validations in the Person class have been rearranged using the Flue
 # 🗂️ Klasör ve Dosya Yapısı
 
 📂**`Models`**  
-&nbsp;&nbsp;📃[Person.cs]()      
+&nbsp;&nbsp;📃[Person.cs](https://github.com/278-Sipay/assignment-1-sdnrcvk/blob/main/Sipay.Bootcamp.SedanurCevik/Models/Person.cs)      
 📂**`Controllers`**  
-&nbsp;&nbsp;📃[PersonController.cs]()     
+&nbsp;&nbsp;📃[PersonController.cs](https://github.com/278-Sipay/assignment-1-sdnrcvk/blob/main/Sipay.Bootcamp.SedanurCevik/Controllers/PersonController.cs)     
 📂**`Validators`**  
-&nbsp;&nbsp;📃[PersonValidator.cs]()   
+&nbsp;&nbsp;📃[PersonValidator.cs](https://github.com/278-Sipay/assignment-1-sdnrcvk/blob/main/Sipay.Bootcamp.SedanurCevik/Validators/PersonValidator.cs)   
 
 # 📎 Ek Bilgiler
 
