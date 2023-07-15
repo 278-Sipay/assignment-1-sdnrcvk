@@ -1,10 +1,11 @@
-# assignment-1
+# Patika.dev | Sipay .Net Bootcamp | Lesson Homeworks | Assignment-1
 
 # 📋 Ders Ödevleri
 
 Hafta 1 - Person class içerisindeki validation'lar (Şekil 1) FluentValidation kütüphanesi kullanılarak yeniden düzenlendi. Controller üzerindeki POST methodu attributelar yerinde FluentValidation ile çalışacak şekilde düzenlendi. 
 
 Şekil 1 :
+
 ![image](https://github.com/sdnrcvk/sdnrcvk/assets/58807892/b1409059-e02a-4fc9-b03b-b6e2eb561cab) 
   
 # 📋 Lesson Homeworks
