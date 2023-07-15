@@ -1,51 +1,44 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/0mNoXTBm)
 # assignment-1
 
+# 📋 Ders Ödevleri
 
-## Appendix
+Hafta 1 - Person class içerisindeki validation'lar (Şekil 1) FluentValidation kütüphanesi kullanılarak yeniden düzenlendi. Controller üzerindeki POST methodu attributelar yerinde FluentValidation ile çalışacak şekilde düzenlendi. 
 
-Person class icersindeki validation lar FluentValidation kutuphanesi kullanilarak yeniden duzenlenecek.
-Controller uzerindeki POST methodu attributelar yerinde FluentValidation ile calisacak sekilde duzenlenecek. 
-Odev icerisinde sadece 1 controller ve 1 method teslim edilecek. 
+Şekil 1 :
+![image](https://github.com/sdnrcvk/sdnrcvk/assets/58807892/b1409059-e02a-4fc9-b03b-b6e2eb561cab) 
+  
+# 📋 Lesson Homeworks
 
+Week 1 - The validations in the Person class have been rearranged using the FluentValidation library. The POST method on the controller has been adjusted to work with FluentValidation in place of the attributes.
 
+# 🗂️ Klasör ve Dosya Yapısı
 
-```c#=
-public class Person
-{
-    [DisplayName("Staff person name")]
-    [Required]
-    [StringLength(maximumLength: 100, MinimumLength = 5)]
-    public string Name { get; set; }
+📂**`Models`**  
+&nbsp;&nbsp;📃[Person.cs]()      
+📂**`Controllers`**  
+&nbsp;&nbsp;📃[PersonController.cs]()     
+📂**`Validators`**  
+&nbsp;&nbsp;📃[PersonValidator.cs]()   
 
+# 📎 Ek Bilgiler
 
-    [DisplayName("Staff person lastname")]
-    [Required]
-    [StringLength(maximumLength: 100, MinimumLength = 5)]
-    public string Lastname { get; set; }
+## 🔗 RESTful API Nedir?
 
+RESTful API (Representational State Transfer), web servislerin veri iletişimi için kullanılan bir yazılım mimarisidir. RESTful API, bir istemci (client) ile bir sunucu (server) arasında veri alışverişini sağlayan bir yapıdır.
 
-    [DisplayName("Staff person phone number")]
-    [Required]
-    [Phone]
-    public string Phone { get; set; }
+RESTful API'nin temel prensibi, kaynaklara (resources) dayalı bir yapıya sahip olmasıdır. Her bir kaynak, benzersiz bir tanımlayıcıya (URI - Uniform Resource Identifier) sahip olur ve bu tanımlayıcı üzerinden erişilebilir. Örneğin, bir blog yazısı kaynağına erişmek için /blog/yazilar/1 gibi bir URI kullanılabilir.
 
+RESTful API, HTTP protokolü üzerinden çalışır ve genellikle HTTP metotlarını (GET, POST, PUT, DELETE vb.) kullanarak işlem yapar. Her bir metot, belirli bir eylemi gerçekleştirmek için kullanılır. Örneğin, GET metodu bir kaynağı okumak için kullanılırken, POST metodu yeni bir kaynak oluşturmak için kullanılabilir.
 
-    [DisplayName("Staff person access level to system")]
-    [Range(minimum: 1, maximum: 5)]
-    [Required]
-    public int AccessLevel { get; set; }
+API'nin cevapları genellikle JSON (JavaScript Object Notation) veya XML (eXtensible Markup Language) formatında döndürülür. Bu sayede istemci, API ile iletişim kurarak veri alışverişi yapabilir ve bu verileri kullanabilir.
 
+## ✔️ Fluent Validation Nedir?
 
+Fluent Validation, .NET platformunda kullanılan bir doğrulama kütüphanesidir. Bu kütüphane, giriş değerlerini doğrulamak ve hataları işlemek için kullanılır.
 
-    [DisplayName("Staff person salary")]
-    [Required]
-    [Range(minimum: 5000, maximum: 50000)]
-    [SalaryAttribute]
-    public decimal Salary { get; set; }
-}
-```
+Fluent Validation, kodunuzda doğrulama kurallarını açıkça tanımlamanızı sağlar ve bu kuralları nesneler üzerinde doğrudan uygulamanızı kolaylaştırır. Kütüphane, zincirleme yöntemler (fluent interface) kullanarak doğrulama kurallarını tanımlamanıza olanak sağlar.
 
+Örneğin, bir kullanıcının kaydolma formunda gerekli alanları doldurması gerektiğini doğrulamak istediğinizi düşünelim.Kullanıcı adının boş olmaması, e-posta adresinin geçerli bir formatta olması ve parolanın belirli bir uzunlukta olması gibi kuralları tanımlayabilirsiniz. Ayrıca özelleştirilebilirlik özelliği sayesinde ihtiyaçlarınıza göre doğrulama kurallarınızı genişletebilirsiniz.
 
 ## Badges
 
